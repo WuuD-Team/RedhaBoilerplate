@@ -235,6 +235,8 @@ sdk.dir=/Users/your-name/Library/Android/sdk
 
 - `cd .. && yarn start && yarn android`
 
+</br>
+
 # 💪 Dev Team
 
 <table align="center">
@@ -292,7 +294,6 @@ sdk.dir=/Users/your-name/Library/Android/sdk
 </tbody>
 </table>
 
-</br>
 </br>
 
 ## 👨‍⚖️ License
