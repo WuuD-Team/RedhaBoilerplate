@@ -5,9 +5,10 @@
   "author": "https://github.com/MedRedha",
   "description": "An Awesome React Native TypeScript Boilerplate",
   "scripts": {
-    "android": "npx react-native run-android --variant=devDebug",
-    "ios": "(cd ios && xcodebuild -alltargets clean) && npx react-native run-ios --simulator=\"iPhone 12 Pro Max\"",
     "start": "watchman watch-del-all && watchman watch ./ && yarn start --reset-cache",
+    "ios": "(cd ios && xcodebuild -alltargets clean) && npx react-native run-ios --simulator=\"iPhone 12 Pro Max\"",
+    "android": "npx react-native run-android --variant=devDebug",
+    "pod": "npx pod-install",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "postinstall": "npx jetify",
