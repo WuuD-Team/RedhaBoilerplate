@@ -235,9 +235,6 @@ sdk.dir=/Users/your-name/Library/Android/sdk
 
 - `cd .. && yarn start && yarn android`
 
-</br>
-</br>
-
 # 💪 Dev Team
 
 <table align="center">
