@@ -1,24 +1,37 @@
-<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
-
-[![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
-
-[![npm version](https://img.shields.io/npm/v/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-[![npm](https://img.shields.io/npm/dt/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
-![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
-
 <p align="center">
-  <img alt="React Native Typescript Boilerplate"
-        src="assets/react-native-typescript-boilerplate.gif" />
+  <h1 align="center">
+    <b align="center">React Native TypeScript Boilerplate </b>
+    </br>
+    <b align="center">by The WuuD Team® </b>
+  </h1>
 </p>
 
-# Installation
+<p align="center">
+		<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/WuuD-Team/RedhaBoilerplate?style=flat&color=blueviolet&logo=GitHub&label=Version">
+		<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/WuuD-Team/RedhaBoilerplate/react-native?style=flat&logo=React&label=React Native">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WuuD-Team/RedhaBoilerplate?style=flat&color=ff69b4&label=Last%20Commit">
+		<img alt="Pull Request" src="https://img.shields.io/github/issues-pr/WuuD-Team/RedhaBoilerplate?label=Pull%20Request">
+	</br>
+		<img alt="Website" src="https://img.shields.io/website?down_color=critical&down_message=down&style=flat&logo=internet&up_color=green&up_message=up&url=https%3A%2F%2Fwuud-team.com%2F">
+	<img src="https://api.netlify.com/api/v1/badges/1a8f2e27-e68c-4421-af8a-9f010a5faefb/deploy-status" />
+	<img alt="GitHub stars" src="https://img.shields.io/github/stars/WuuD-Team/RedhaBoilerplate?style=social">
+  <img alt="Platforms" src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=flat&color=critical&logo=Apple&label=Platform">
+</p>
 
-You can simply clone the project and start with your barebone project
+<p align="center">
+	<a href="https://wuud-team.com/">
+		<img src="https://i.imgur.com/z1OlxET.jpg" alt="wuud team cover">
+	</a>
+</p>
+
+</br>
+
+# 🚀 Installation
+
+You can simply clone the project and start with your new awesome project
 
 ```sh
-git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
+git clone git@github.com:WuuD-Team/RedhaBoilerplate.git my-app-name
 ```
 
 ## Android local.properties
@@ -26,7 +39,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 - Go to `Android -> local.properties`
 - Change the your local android sdk and cmake path
 
-# What's Included?
+# 🎁 What's Included?
 
 - **Navigation System**
   - React Navigation V5
@@ -52,7 +65,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 - **Built-in Custom Font Implementation**
   - All you need to do is copy-paste the .tff file and run `npx react-native-asset` command
 
-## Project Structure
+## 🏗 Project Structure
 
 ```
 ├───android
@@ -114,9 +127,9 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 ├───tsconfig.json
 ```
 
-# Components
+# 🗃 Components
 
-## Styles
+## 🎨 Styles
 
 - **TextWrapper** over default Text component
 - Colors
@@ -124,7 +137,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 - Theme
 - Font Size
 
-## Imports
+## 🚢 Imports
 
 Predefined **`h`** tags are usable with TextWrapper
 
@@ -167,26 +180,26 @@ if you want to call them all at once
 import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
 ```
 
-# Step By Step Guide
+# 🧭 Step By Step Guide
 
-## Clean-Up & Simple Run
+## 🧼 Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
 
 - `rm -rf .git README.md`
-- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png`
 - `git init`
-- `npm i`
+- `yarn || npm i`
 - `npx pod-install` (iOS Only)
-- `react-native run-ios/android`
+- `yarn start`
+- `yarn ios || yarn android`
 
 **OR**
 
-- `npm run clean-up`
 - `npm i && npx pod-install`
-- `react-native run-ios/android`
+- `yarn start`
+- `yarn ios || yarn android`
 
-## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
+## 🏷 Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
 
 ```sh
 npx react-native-rename <your-project-name>
@@ -198,19 +211,20 @@ npx react-native-rename <your-project-name>
 npx react-native-rename <your-project-name> -b <bundleIdentifier>
 ```
 
-### Install Pods (iOS Only)
+###  Install Pods (iOS Only)
 
-- `npm i`
+- `yarn || npm i`
 - `cd ios && pod install`
-- `cd .. && react-native run-ios/android`
+- `yarn start`
+- `yarn ios || yarn android`
 
-### Android local.properties (Android Only)
+### 🤖 Android local.properties (Android Only)
 
-- `npm i`
+- `yarn || npm i`
 - `cd android && mkdir local.properties`
 - `nano local.properties`
 
-#### Example of MacOS Android SDK Path
+#### 💻 Example of MacOS Android SDK Path
 
 Make sure that set your right path of Android SDK
 
@@ -219,23 +233,82 @@ ndk.dir=/Users/your-name/Library/Android/sdk/ndk-bundle
 sdk.dir=/Users/your-name/Library/Android/sdk
 ```
 
-- `cd .. & react-native run-ios/android`
+- `cd .. && yarn start && yarn android`
 
-### Future Plans
+</br>
+</br>
 
-- [x] ~~LICENSE~~
-- [ ] Better and separated documentation
-- [ ] MobX State Tree Fork Version
-- [ ] Write an article about the lib on Medium
+# 💪 Dev Team
 
-## Credits
+<table align="center">
+<tbody>
+  <tr border-radius="50%">
+    <td align="center" valign="top" width="11%" border-radius="50%">
+      <a href="https://github.com/badjio">
+        <img
+          alt="Backend Developer"
+          src="https://avatars2.githubusercontent.com/u/15873766?s=400&v=4"
+          style="border-radius:50%"
+          width="100"
+          height="100"
+        />
+        <br />
+        <br />
+        <b>Moh Badjah</b>
+        <br />
+      </a>
+	Lead Backend Developer
+    </td>
+    <td align="center" valign="top" width="11%">
+      <a href="https://github.com/na6im">
+        <img
+          alt="Web Developer"
+          src="https://avatars1.githubusercontent.com/u/38627023?s=400&v=4"
+          style="border-radius: 50px"
+          width="100"
+          height="100"
+        />
+        <br />
+        <br />
+        <b>Nassim Amokrane</b>
+        <br />
+      </a>
+      	Lead Web Developer
+    </td>
+    <td align="center" valign="top" width="11%">
+      <a href="https://github.com/MedRedha">
+        <img
+          alt="Mobile Developer"
+          src="https://github.com/medredha.png?s=75"
+          style="border-radius: 50%"
+          width="100"
+          height="100"
+        />
+        <br />
+        <br />
+        <b>Med Redha</b>
+        <br />
+      </a>
+      	Lead Mobile Developer
+    </td>
+  </tr>
+</tbody>
+</table>
 
-<span>Photo by <a href="https://unsplash.com/@aznbokchoy?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lucas Benjamin</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+</br>
+</br>
 
-## Author
+## 👨‍⚖️ License
 
-FreakyCoder, kurayogun@gmail.com
+The code is available under the [MIT](https://github.com/WuuD-Team/RedhaBoilerplate/blob/main/LICENSE) license.
 
-## License
+</br>
 
-React Native Typescript Boilerplate is available under the MIT license. See the LICENSE file for more info.
+<h3 align="center">
+  <b align="center">
+  Made with 💖 by the
+    <a href="https://wuud-team.com/">
+      WuuD Team® - In Code We Trust -
+    </a>
+  </b>
+</h3>
