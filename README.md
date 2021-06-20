@@ -8,14 +8,15 @@
 
 <p align="center">
 		<img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/WuuD-Team/RedhaBoilerplate?style=flat&color=blueviolet&logo=GitHub&label=Version">
-		<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/WuuD-Team/RedhaBoilerplate/react-native?style=flat&logo=React&label=React Native">
+		<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/WuuD-Team/RedhaBoilerplate/react-native?style=flat&logo=React&label=React%20Native">
+    <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/WuuD-Team/RedhaBoilerplate/dev/typescript?style=flat&color=informational&logo=TypeScript&label=TypeScript&logoColor=yellow">
+    <img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/WuuD-Team/RedhaBoilerplate/dev/prettier?style=flat&color=informational&logo=Prettier&label=Prettier&logoColor=pink">
 		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WuuD-Team/RedhaBoilerplate?style=flat&color=ff69b4&label=Last%20Commit">
 		<img alt="Pull Request" src="https://img.shields.io/github/issues-pr/WuuD-Team/RedhaBoilerplate?label=Pull%20Request">
-	</br>
 		<img alt="Website" src="https://img.shields.io/website?down_color=critical&down_message=down&style=flat&logo=internet&up_color=green&up_message=up&url=https%3A%2F%2Fwuud-team.com%2F">
-	<img src="https://api.netlify.com/api/v1/badges/1a8f2e27-e68c-4421-af8a-9f010a5faefb/deploy-status" />
-	<img alt="GitHub stars" src="https://img.shields.io/github/stars/WuuD-Team/RedhaBoilerplate?style=social">
-  <img alt="Platforms" src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=flat&color=critical&logo=Apple&label=Platform">
+    <img src="https://api.netlify.com/api/v1/badges/1a8f2e27-e68c-4421-af8a-9f010a5faefb/deploy-status" />
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/WuuD-Team/RedhaBoilerplate?style=social">
+    <img alt="Platforms" src="https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg?style=flat&color=critical&logo=Apple&label=Platform">
 </p>
 
 <p align="center">
