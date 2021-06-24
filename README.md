@@ -111,7 +111,7 @@ git clone git@github.com:WuuD-Team/RedhaBoilerplate.git my-app-name
 │       └───index.ts
 ├───.babelrc
 ├───.buckconfig
-├───.eslintrc.js
+├───.eslintrc
 ├───.gitattributes
 ├───.gitignore
 ├───.npmignore

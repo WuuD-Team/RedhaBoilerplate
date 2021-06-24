@@ -1,9 +1,12 @@
-import "react-native-gesture-handler";
-import React from "react";
-import { StatusBar } from "react-native";
-import Navigation from "./src/services/navigation";
-import { isAndroid } from "@freakycoder/react-native-helpers";
-import AnimatedSplash from "react-native-animated-splash-screen";
+// @ts-ignore
+import React from 'react';
+
+import 'react-native-gesture-handler';
+import {isAndroid} from '@freakycoder/react-native-helpers';
+import {StatusBar} from 'react-native';
+import AnimatedSplash from 'react-native-animated-splash-screen';
+
+import Navigation from './src/services/navigation';
 
 console.disableYellowBox = true;
 
@@ -11,9 +14,9 @@ const App = () => {
   const [isLoaded, setIsLoaded] = React.useState(false);
 
   React.useEffect(() => {
-    StatusBar.setBarStyle("dark-content");
+    StatusBar.setBarStyle('dark-content');
     if (isAndroid) {
-      StatusBar.setBackgroundColor("rgba(0,0,0,0)");
+      StatusBar.setBackgroundColor('rgba(0,0,0,0)');
       StatusBar.setTranslucent(true);
     }
     setTimeout(() => {
@@ -29,9 +32,8 @@ const App = () => {
         logoImage={null}
         isLoaded={isLoaded}
         backgroundColor={null}
-        imageBackgroundResizeMode="cover"
-        imageBackgroundSource={require("./src/assets/splash/lucas-benjamin-unsplash.jpg")}
-      >
+        imageBackgroundResizeMode='cover'
+        imageBackgroundSource={require('./src/assets/splash/lucas-benjamin-unsplash.jpg')}>
         <Navigation />
       </AnimatedSplash>
     </>

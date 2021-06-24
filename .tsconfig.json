@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "target": "es5",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "noEmit": true,
+    "strict": false,
+    "lib": ["es5", "es6"],
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["./node_modules", "node_modules/**"],
+  "exclude": [
+    "node_modules/**",
+    "./node_modules",
+    "./babel.config.js",
+    "./metro.config.js",
+    "./jest.config.js"
+  ]
+}
