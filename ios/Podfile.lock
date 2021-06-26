@@ -60,7 +60,7 @@ PODS:
   - libevent (2.1.12)
   - MMKV (1.2.7):
     - MMKVCore (~> 1.2.7)
-  - MMKVCore (1.2.7)
+  - MMKVCore (1.2.9)
   - OpenSSL-Universal (1.1.180)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
@@ -507,7 +507,7 @@ SPEC CHECKSUMS:
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   MMKV: 22e5136f7d00197bc0fc9694b7f71519f0d1ca12
-  MMKVCore: 607b7b05f2c2140056b5d338e45f2c14bf3f4232
+  MMKVCore: 27bf04f4376305c9c0187136a7b58a236ee83f9e
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
