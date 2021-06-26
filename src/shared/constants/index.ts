@@ -1,6 +1,6 @@
 // ? Screens
 export const SCREENS = {
-  HOME: "home",
-  DETAIL: "detail",
-  SEARCH: "search",
+  HOME: 'home',
+  DETAIL: 'detail',
+  SEARCH: 'search',
 };

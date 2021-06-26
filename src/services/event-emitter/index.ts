@@ -1,4 +1,5 @@
-import EventEmitter from "events";
+import * as EventEmitter from 'events';
+
 // Initialization
 const eventEmitter = new EventEmitter();
 eventEmitter.setMaxListeners(50);

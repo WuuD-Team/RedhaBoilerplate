@@ -1,17 +1,13 @@
-import React, { Component } from "react";
-import { View } from "react-native";
-/**
- * ? Local Imports
- */
-import styles from "./SearchScreen.style";
-import Text from "@shared-components/text-wrapper/TextWrapper";
+import * as React from 'react';
 
-export default class SearchScreen extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text h1> SearchScreen </Text>
-      </View>
-    );
-  }
+import {Text, View} from 'react-native';
+
+import styles from './SearchScreen.style';
+
+export default function SearchScreen() {
+  return (
+    <View style={styles.container}>
+      <Text> SearchScreen </Text>
+    </View>
+  );
 }

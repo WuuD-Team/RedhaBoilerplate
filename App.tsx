@@ -1,5 +1,4 @@
-// @ts-ignore
-import React from 'react';
+import * as React from 'react';
 
 import 'react-native-gesture-handler';
 import {isAndroid} from '@freakycoder/react-native-helpers';
