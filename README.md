@@ -69,63 +69,47 @@ git clone git@github.com:WuuD-Team/RedhaBoilerplate.git my-app-name
 ## 🏗 Project Structure
 
 ```
-├───android
-├───ios
-├───src
-│   ├───screens
-│   │   ├───detail
-│   │   │   ├───DetailScreen.style.ts
-│   │   │   └───DetailScreen.tsx
-│   │   ├───home
-│   │   │   ├───HomeScreen.style.ts
-│   │   │   └───HomeScreen.tsx
-│   │   └───search
-│   │       ├───SearchScreen.style.ts
-│   │       └───SearchScreen.tsx
-│   ├───services
-│   │   ├───api
-│   │   │   ├───api.constant.ts
-│   │   │   └───index.ts
-│   │   ├───event-emitter
-│   │   │   └───index.ts
-│   │   ├───models
-│   │   │   └───index.ts
-│   │   └───navigation
-│   │       └───index.tsx
-│   ├───shared
-│   │   ├───components
-│   │   │   └───text-wrapper
-│   │   ├───constants
-│   │   │   └───index.ts
-│   │   ├───localization
-│   │   │   └───index.ts
-│   │   └───theme
-│   │       ├───fonts
-│   │       ├───colors.ts
-│   │       ├───font-size.ts
-│   │       ├───index.ts
-│   │       └───theme.ts
-│   └───utils
-│       ├───local-storage
-│       │   └───index.ts
-│       └───index.ts
-├───.babelrc
-├───.buckconfig
-├───.eslintrc
-├───.gitattributes
-├───.gitignore
-├───.npmignore
-├───.prettierrc.js
-├───.watchmanconfig
-├───App.tsx
-├───README.md
-├───app.json
-├───index.js
-├───metro.config.js
-├───package-lock.json
-├───package.json
-├───react-native.config.js
-├───tsconfig.json
+├── App.tsx
+├── LICENSE
+├── README.md
+├── __tests__
+|  └── App-test.tsx
+├── android
+|  ├── app
+|  ├── build.gradle
+|  ├── gradle
+|  ├── gradle.properties
+|  ├── gradlew
+|  ├── gradlew.bat
+|  ├── link-assets-manifest.json
+|  ├── local.properties
+|  └── settings.gradle
+├── app.json
+├── babel.config.js
+├── index.js
+├── ios
+|  ├── Podfile
+|  ├── Podfile.lock
+|  ├── Pods
+|  ├── RedhaBoilerplate
+|  ├── RedhaBoilerplate-tvOS
+|  ├── RedhaBoilerplate-tvOSTests
+|  ├── RedhaBoilerplate.xcodeproj
+|  ├── RedhaBoilerplate.xcworkspace
+|  ├── RedhaBoilerplateTests
+|  └── link-assets-manifest.json
+├── logbox.js
+├── metro.config.js
+├── package-lock.json
+├── package.json
+├── react-native.config.js
+├── src
+|  ├── assets
+|  ├── screens
+|  ├── services
+|  ├── shared
+|  └── utils
+└── yarn.lock
 ```
 
 # 🗃 Components
@@ -140,21 +124,10 @@ git clone git@github.com:WuuD-Team/RedhaBoilerplate.git my-app-name
 
 ## 🚢 Imports
 
-Predefined **`h`** tags are usable with TextWrapper
-
-```jsx
-import Text from "@shared-components/text-wrapper/Text";
-
-// ? Advanced Usage Example
-<Text h3 bold right color="#913400" numberOfLines={1} style={{ margin: 16 }}>
-  Heading 3 Bold Right Sided Custom Text
-</Text>;
-```
-
 ```jsx
 import colors from "@colors";
 
-<Text h1 color={colors.light.primary}>
+<Text color={colors.light.primary}>
   Heading 1 with custom color from theme
 </Text>;
 ```
@@ -162,7 +135,7 @@ import colors from "@colors";
 ```jsx
 import fonts from "@fonts";
 
-<Text h5 fontFamily={fonts.helvetica.regular}>
+<Text fontFamily={fonts.helvetica.regular}>
   Heading 1 with custom font usage
 </Text>;
 ```
