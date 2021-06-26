@@ -9,7 +9,7 @@
     "url" : "https://github.com/MedRedha"
   },
   "scripts": {
-    "start": "watchman watch-del-all && watchman watch ./ && yarn start --reset-cache",
+    "start": "watchman watch-del-all && watchman watch ./ && react-native start --reset-cache",
     "ios": "(cd ios && xcodebuild -alltargets clean) && npx react-native run-ios --simulator=\"iPhone 12 Pro Max\"",
     "android": "npx react-native run-android --variant=devDebug",
     "pod": "npx pod-install",
