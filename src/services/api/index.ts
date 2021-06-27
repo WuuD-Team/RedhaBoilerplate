@@ -34,6 +34,6 @@ export const fetchExample = () =>
       .catch((error) => {
         // handle error
         reject(error);
-        console.log(error);
+        console.log('--------', error);
       });
   });

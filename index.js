@@ -1,12 +1,11 @@
-import './logbox';
 import 'react-native-gesture-handler';
-import {AppRegistry, YellowBox} from 'react-native';
+import {AppRegistry, LogBox} from 'react-native';
 
 import App from './App';
 import {name as appName} from './app.json';
 
 // KEEP IT CALM
-YellowBox.ignoreWarnings([
+LogBox.ignoreLogs([
   'Warning:', // ignoring useless warnings
   'Require cycle:', // ignoring components cycle warning
 ]);

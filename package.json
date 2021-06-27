@@ -3,10 +3,10 @@
   "description": "An Awesome React Native TypeScript Boilerplate",
   "version": "0.0.1",
   "homepage": "https://wuud-team.com",
-  "author":
-  { "name" : "Med Redha Khelifi",
+  "author": {
+    "name": "Med Redha Khelifi",
     "email": "redha@wuud-team.com",
-    "url" : "https://github.com/MedRedha"
+    "url": "https://github.com/MedRedha"
   },
   "scripts": {
     "start": "watchman watch-del-all && watchman watch ./ && rm -rf /Users/MedRedha/Library/Developer/Xcode/DerivedData/ && react-native start --reset-cache",
@@ -39,6 +39,7 @@
     "react-native-gesture-handler": "^1.10.3",
     "react-native-localization": "^2.1.7",
     "react-native-mmkv-storage": "^0.6.0",
+    "react-native-orientation-locker": "^1.3.1",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.4.0",
     "react-native-vector-icons": "^8.1.0",
