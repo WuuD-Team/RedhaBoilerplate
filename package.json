@@ -9,10 +9,11 @@
     "url" : "https://github.com/MedRedha"
   },
   "scripts": {
-    "start": "watchman watch-del-all && watchman watch ./ && react-native start --reset-cache",
+    "start": "watchman watch-del-all && watchman watch ./ && rm -rf /Users/MedRedha/Library/Developer/Xcode/DerivedData/ && react-native start --reset-cache",
     "ios": "(cd ios && xcodebuild -alltargets clean) && npx react-native run-ios --simulator=\"iPhone 12 Pro Max\"",
     "android": "npx react-native run-android --variant=devDebug",
     "pod": "npx pod-install",
+    "pod update": "(cd ios && pod repo update)",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "postinstall": "npx jetify",
@@ -32,7 +33,7 @@
     "babel-plugin-transform-remove-console": "^6.9.4",
     "events": "^3.3.0",
     "react": "17.0.2",
-    "react-native": "0.64.2",
+    "react-native": "0.63.2",
     "react-native-animated-splash-screen": "^2.0.5",
     "react-native-dynamic-vector-icons": "^1.1.6",
     "react-native-gesture-handler": "^1.10.3",
