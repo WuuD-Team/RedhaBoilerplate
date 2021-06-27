@@ -20,9 +20,8 @@
 </p>
 
 <p align="center">
-	<a href="https://wuud-team.com/">
-		<img src="https://i.imgur.com/z1OlxET.jpg" alt="wuud team cover">
-	</a>
+	<img width="200" align="center" src="https://i.imgur.com/7GucN5r.png" alt="Redha Boilerplate Logo">
+	<img width="500" align="center" src="https://i.imgur.com/yUdJIAS.png" alt="wuud team cover">
 </p>
 
 </br>
