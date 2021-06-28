@@ -5,46 +5,30 @@ import {StatusBar} from 'react-native';
 import AnimatedSplash from 'react-native-animated-splash-screen';
 import Orientation from 'react-native-orientation-locker';
 
+import ThemeProvider from './src/hooks/useTheme';
 import Navigation from './src/services/navigation';
 
-interface AppState {
-  isLoaded: boolean;
-}
+export default function App() {
+  const [isLoaded, setIsLoaded] = React.useState(false);
 
-export default class App extends React.Component<AppState, any> {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoaded: false,
-    };
-    // LOCK DEVICE ORIENTATION
+  React.useEffect(() => {
     Orientation.lockToPortrait();
-  }
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 1500);
+  }, []);
 
-  componentDidMount() {
-    setTimeout(
-      () =>
-        this.setState({
-          isLoaded: true,
-        }),
-      1500
-    );
-  }
-
-  render() {
-    const {isLoaded} = this.state;
-    return (
-      <>
-        <StatusBar hidden />
-        <AnimatedSplash
-          transluent
-          isLoaded={isLoaded}
-          backgroundColor='#262626'
-          imageBackgroundResizeMode='center'
-          logoImage={require('./src/assets/images/logo.png')}>
-          <Navigation />
-        </AnimatedSplash>
-      </>
-    );
-  }
+  return (
+    <ThemeProvider>
+      <StatusBar hidden />
+      <AnimatedSplash
+        transluent
+        isLoaded={isLoaded}
+        backgroundColor='#1C1F26'
+        imageBackgroundResizeMode='center'
+        logoImage={require('./src/assets/images/logo.png')}>
+        <Navigation />
+      </AnimatedSplash>
+    </ThemeProvider>
+  );
 }

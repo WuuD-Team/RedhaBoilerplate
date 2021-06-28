@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules"
+    ],
+    "types": [
+      "node", "jest", "lodash", "react",
+      "react-dom", "react-redux", "redux-logger", "material-ui",
+      "react-router-dom", "react-router-redux",
+      "redux", "binary-type-tree", "redux-form",
+      "tedb", "react-tap-event-plugin",
+      "react-hot-loader", "material-ui-icons"
+    ],
     "allowJs": true,
     "esModuleInterop": false,
     "isolatedModules": true,
