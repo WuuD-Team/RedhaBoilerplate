@@ -36,12 +36,12 @@ const Navigation = () => {
       tabBarOptions={{
         showLabel: true,
         labelStyle: {
-          color: theme.text,
+          fontFamily: 'ProductSans-Bold',
         },
-        activeTintColor: '#5931ff',
-        inactiveTintColor: 'gray',
+        activeTintColor: theme.blue,
+        inactiveTintColor: theme.gray,
         tabStyle: {
-          backgroundColor: theme.primary,
+          backgroundColor: theme.contrast,
         },
         style: {borderTopColor: theme.divider},
       }}>
@@ -52,7 +52,8 @@ const Navigation = () => {
 
   return (
     <NavigationContainer ref={navigationRef}>
-      <SafeAreaView style={{flex: 1, backgroundColor: theme.primary}}>
+      <SafeAreaView style={{flex: 0, backgroundColor: theme.primary}} />
+      <SafeAreaView style={{flex: 1, backgroundColor: theme.contrast}}>
         <Stack.Navigator
           screenOptions={{
             headerShown: false,

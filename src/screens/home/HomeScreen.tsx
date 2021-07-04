@@ -16,7 +16,9 @@ export default function HomeScreen() {
       style={{
         ...styles.container,
       }}>
-      <Text style={styles.titleTextStyle}>{Date()}</Text>
+      <Text style={{...styles.titleTextStyle, color: theme.text}}>
+        {Date()}
+      </Text>
     </LinearGradient>
   );
 }

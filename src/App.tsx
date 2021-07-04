@@ -34,7 +34,7 @@ export default function App() {
       <AnimatedSplash
         transluent
         isLoaded={isLoaded}
-        backgroundColor='#1C1F26'
+        backgroundColor='#1c1c1c'
         imageBackgroundResizeMode='center'
         logoImage={require('./assets/images/logo.png')}>
         <Navigation />
