@@ -57,8 +57,8 @@
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
-		<string>Product-Regular.ttf</string>
-		<string>Product-Bold.ttf</string>
+		<string>ProductRegular.ttf</string>
+		<string>ProductBold.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

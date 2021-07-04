@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {useContext} from 'react';
 
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 import {ThemeContext} from '../../hooks/useTheme';
 import styles from './HomeScreen.style';
@@ -10,12 +11,12 @@ export default function HomeScreen() {
   const {theme}: any = useContext(ThemeContext);
 
   return (
-    <View
+    <LinearGradient
+      colors={theme.gradient}
       style={{
         ...styles.container,
-        backgroundColor: theme.primary,
       }}>
-      <Text />
-    </View>
+      <Text style={styles.titleTextStyle}>{Date()}</Text>
+    </LinearGradient>
   );
 }
