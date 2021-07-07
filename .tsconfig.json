@@ -13,7 +13,7 @@
       "react-hot-loader", "material-ui-icons"
     ],
     "allowJs": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "isolatedModules": true,
     "target": "es5",
     "jsx": "react",

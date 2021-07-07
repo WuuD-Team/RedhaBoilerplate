@@ -1,6 +1,6 @@
-// ? Screens
+// Screens
 export const SCREENS = {
+  SPLASH: 'splashScreen',
   HOME: 'home',
-  DETAIL: 'detail',
   SEARCH: 'search',
 };

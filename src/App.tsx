@@ -1,17 +1,17 @@
 import * as React from 'react';
+import {useEffect} from 'react';
 
 import 'react-native-gesture-handler';
 
 import {StatusBar} from 'react-native';
-import AnimatedSplash from 'react-native-animated-splash-screen';
 import {setCustomText, setCustomTextInput} from 'react-native-global-props';
 import Orientation from 'react-native-orientation-locker';
 
 import ThemeProvider from './hooks/useTheme';
+import SplashScreen from './screens/splashScreen/SplashScreen';
 import Navigation from './services/navigation';
 
 export default function App() {
-  const [isLoaded, setIsLoaded] = React.useState(false);
   const customTextProps = {
     style: {
       fontFamily: 'ProductSans-Regular',
@@ -21,24 +21,14 @@ export default function App() {
   setCustomText(customTextProps);
   setCustomTextInput(customTextProps);
 
-  React.useEffect(() => {
+  useEffect(() => {
     Orientation.lockToPortrait();
-    setTimeout(() => {
-      setIsLoaded(true);
-    }, 1500);
   }, []);
 
   return (
     <ThemeProvider>
       <StatusBar hidden />
-      <AnimatedSplash
-        transluent
-        isLoaded={isLoaded}
-        backgroundColor='#1c1c1c'
-        imageBackgroundResizeMode='center'
-        logoImage={require('./assets/images/logo.png')}>
-        <Navigation />
-      </AnimatedSplash>
+      <Navigation />
     </ThemeProvider>
   );
 }

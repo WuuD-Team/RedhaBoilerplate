@@ -35,6 +35,7 @@
     "react/no-access-state-in-setstate": "off",
     "no-case-declarations": "off",
     "no-dupe-keys": "off",
+    "no-lone-blocks": "off",
     "no-useless-concat": "off",
     "no-unused-labels": "off",
     "no-use-before-define": "off",
