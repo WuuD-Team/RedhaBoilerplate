@@ -5,22 +5,6 @@ const API_HEADER = {
   'x-api-key': 'your-access-token',
 };
 
-/**
- * ? USAGE:
- *
- * import { fetchExample } from "api"
- *
- * fetchExample()
- * .then((res) => {
- *   // Your Magic is here
- * })
- * .catch((err) => {
- *   // Handle your API error
- *   console.error("Fetch Example Error: ", err);
- * });
- *
- */
-
 export const fetchExample = () =>
   new Promise(async (resolve, reject) => {
     const url = BASE_URL + 'your-url';

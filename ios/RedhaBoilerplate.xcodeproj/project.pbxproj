@@ -12,6 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8FC7F46E26F3E4D9001F3ACF /* ProductThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FC7F46D26F3E4D9001F3ACF /* ProductThin.ttf */; };
 		8FEDBE962690B2930044E230 /* ProductRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06F5917398B54A76A3FA8470 /* ProductRegular.ttf */; };
 		8FEDBE972690B2930044E230 /* ProductBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E62B5BF9C46435B810D3823 /* ProductBold.ttf */; };
 		9CB56DC0DA46BA916A805635 /* libPods-RedhaBoilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E35DF7BAE771E2DE91481ADE /* libPods-RedhaBoilerplate.a */; };
@@ -56,6 +57,7 @@
 		6586A6130D0346C29454B273 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		6605C8D90DC444AF80B67B38 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RedhaBoilerplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FC7F46D26F3E4D9001F3ACF /* ProductThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ProductThin.ttf; path = ../src/assets/fonts/ProductThin.ttf; sourceTree = "<group>"; };
 		9C893FF21D3C38D09F11534A /* Pods-RedhaBoilerplate-RedhaBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedhaBoilerplate-RedhaBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-RedhaBoilerplate-RedhaBoilerplateTests/Pods-RedhaBoilerplate-RedhaBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC16072130854038A7B1D181 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		CD8D08F3438D4F69AA816B81 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		EDFF3DD15E6149AEB5D595D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8FC7F46D26F3E4D9001F3ACF /* ProductThin.ttf */,
 				06F5917398B54A76A3FA8470 /* ProductRegular.ttf */,
 				5E62B5BF9C46435B810D3823 /* ProductBold.ttf */,
 				59BBE0A897474F36808120AA /* AntDesign.ttf */,
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC7F46E26F3E4D9001F3ACF /* ProductThin.ttf in Resources */,
 				8FEDBE962690B2930044E230 /* ProductRegular.ttf in Resources */,
 				8FEDBE972690B2930044E230 /* ProductBold.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
@@ -568,6 +572,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RedhaBoilerplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -591,6 +596,7 @@
 				DEVELOPMENT_TEAM = F7L5JX552F;
 				INFOPLIST_FILE = RedhaBoilerplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

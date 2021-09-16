@@ -1,31 +1,42 @@
 import * as React from 'react';
-import {useEffect} from 'react';
+import {useContext, useEffect} from 'react';
 
+import {useNavigation} from '@react-navigation/native';
 // @ts-ignore
 import LottieView from 'lottie-react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import {connect} from 'react-redux';
 
-import * as RootNavigation from '../../services/navigation/RootNavigation';
-import {SCREENS} from '../../shared/constants';
+import {ThemeContext} from '../../hooks/useTheme';
+import {SCREENS} from '../../services/constants';
 import styles from './SplashScreen.style';
 
-export default function SplashScreen() {
+const mapStateToProps = (state) => ({
+  weather: state.data.weather,
+  lastFetch: state.data.weather.lastFetch,
+});
+
+function SplashScreen() {
+  const {theme}: any = useContext(ThemeContext);
+  const navigation = useNavigation();
+
   useEffect(() => {
     setTimeout(() => {
-      RootNavigation.navigate(SCREENS.HOME);
-    }, 1500);
+      // @ts-ignore
+      navigation.replace(SCREENS.HOME);
+    }, 3000);
   }, []);
 
   return (
     <LinearGradient
-      colors={['#1B1F25', '#1c1c1c']}
+      colors={theme.gradient}
       style={{
         ...styles.container,
       }}>
       <LottieView
         source={require('../../assets/animations/splash.json')}
         style={{
-          width: 400,
+          width: 350,
           alignSelf: 'center',
         }}
         autoPlay
@@ -36,3 +47,5 @@ export default function SplashScreen() {
     </LinearGradient>
   );
 }
+
+export default connect(mapStateToProps)(SplashScreen);
